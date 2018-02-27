@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Oxana Garascenco](https://up.htmlacademy.ru/htmlcss/20/user/122666).
-* Наставник: `Роман Марченко`.
+* Наставник: [Роман Марченко](https://htmlacademy.ru/profile/id505487).
 
 ---
 
