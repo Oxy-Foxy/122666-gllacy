@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -25,11 +27,17 @@
         </ul>
 
         <ul class="user-nav">
-          <button class="user-nav-btn" type="button" name="Поиск">
+          <li>
+            <button class="user-nav-btn" type="button" name="Поиск">
             <span class="visually-hidden">Поиск</span>
-          </button>
-          <button class="user-nav-btn" type="button">Вход</button>
-          <a class="items-in-cart" href="#">2 товара</a>
+            </button>
+          </li>
+          <li>
+            <button class="user-nav-btn" type="button">Вход</button>
+          </li>
+          <li>
+            <a class="items-in-cart" href="#">2 товара</a>
+          </li>
           <!-- товары в корзине, появляются при наведении в корзину-->
         <div class="cart-items">
           <ul class="cart-items-list">
@@ -67,21 +75,21 @@
         <a href="#">Каталог</a>
         <span>Сливочное</span>
       </p>
-      <h1>Сливочное мороженное</h1>
+      <h1 class="catalog">Сливочное мороженное</h1>
       <section class="item-sort">
         <h2 class="visually-hidden">Сортировка товаров</h2>
-        <form action="">
-          <label for="sort-by">Сортировка:</label>
+        <form action="" class="sort">
+          <label for="sort-by" class="sort-labels">Сортировка:</label>
           <select name="sort-by" id="sort-by">
             <option value="popularity">по популярности</option>
             <option value="price-down">сначала дорогие</option>
             <option value="price-up">сначала недорогие</option>
             <option value="fat">по жирности</option>
           </select>
-          <label for="price-range">Цена: 100 руб. – 500 руб.</label>
+          <label for="price-range" class="sort-labels">Цена: 100 руб. – 500 руб.</label>
           <input type="range" min="100" max="500" id="price-range">
           <fieldset class="fats">
-            <legend>Жирность:</legend>
+            <legend class="sort-labels">Жирность:</legend>
             <input class="fats-radio-btn" type="radio" id="zero" name="fats">
             <label for="zero">0%</label>
             <input class="fats-radio-btn" type="radio" id="under-ten" name="fats" checked>
@@ -92,7 +100,7 @@
             <label for="thirty-more">выше 30%</label>
           </fieldset>
           <fieldset class="toppings">
-            <legend>Наполнители:</legend>
+            <legend class="sort-labels">Наполнители:</legend>
             <input class="toppings-checkbox" type="checkbox" id="choco" name="choco" checked>
             <label for="choco">шоколадные</label>
             <input class="toppings-checkbox" type="checkbox" id="sugars" name="sugars" checked>
@@ -115,7 +123,7 @@
             <p>
               <span>310 &#8381;</span>
               <span>&#047;кг</span>
-              <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+              <span class="product-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
             </p>
             <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -124,7 +132,7 @@
             <p>
               <span>380 &#8381;</span>
               <span>&#047;кг</span>
-              <span>Сливочно-кофейное с кусочками шоколада</span>
+              <span class="product-item-name">Сливочно-кофейное с кусочками шоколада</span>
             </p>
             <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -133,7 +141,7 @@
             <p>
               <span>355 &#8381;</span>
               <span>&#047;кг</span>
-              <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+              <span class="product-item-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
             </p>
             <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -142,7 +150,7 @@
             <p>
               <span>415 &#8381;</span>
               <span>&#047;кг</span>
-              <span>Сливочное крем-брюле с карамельной подливкой</span>
+              <span class="product-item-name">Сливочное крем-брюле с карамельной подливкой</span>
             </p>
             <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -151,7 +159,7 @@
             <p>
               <span>325 &#8381;</span>
               <span>&#047;кг</span>
-              <span>Сливочное с брусничным джемом</span>
+              <span class="product-item-name">Сливочное с брусничным джемом</span>
             </p>
             <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -160,7 +168,7 @@
             <p>
               <span>410 &#8381;</span>
               <span>&#047;кг</span>
-              <span>Сливочно-черничное с цельными ягодами черники</span>
+              <span class="product-item-name">Сливочно-черничное с цельными ягодами черники</span>
             </p>
             <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -169,7 +177,7 @@
           <p>
             <span>375 &#8381;</span>
             <span>&#047;кг</span>
-            <span>Сливочно-лимонное с карамельной присыпкой</span>
+            <span class="product-item-name">Сливочно-лимонное с карамельной присыпкой</span>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -178,7 +186,7 @@
           <p>
             <span>320 &#8381;</span>
             <span>&#047;кг</span>
-            <span>Сливочное с шоколадной стружкой</span>
+            <span class="product-item-name">Сливочное с шоколадной стружкой</span>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -187,7 +195,7 @@
           <p>
             <span>440 &#8381;</span>
             <span>&#047;кг</span>
-            <span>Сливочно-ванильное с кусочками шоколада</span>
+            <span class="product-item-name">Сливочно-ванильное с кусочками шоколада</span>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -196,7 +204,7 @@
           <p>
             <span>435 &#8381;</span>
             <span>&#047;кг</span>
-            <span>Сливочноe с ментоловым сиропом</span>
+            <span class="product-item-name">Сливочноe с ментоловым сиропом</span>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -205,7 +213,7 @@
           <p>
             <span>355 &#8381;</span>
             <span>&#047;кг</span>
-            <span>Сливочное с кусочками черного шоколада</span>
+            <span class="product-item-name">Сливочное с кусочками черного шоколада</span>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
@@ -214,7 +222,7 @@
             <p>
               <span>420 &#8381;</span>
               <span>&#047;кг</span>
-              <span>Сливочное с мятным сиропом</span>
+              <span class="product-item-name">Сливочное с мятным сиропом</span>
             </p>
             <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>

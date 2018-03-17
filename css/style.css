@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #849d8f;
+}
+
+a,
+button {
+color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+.user-nav,
+.sort-labels {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+.user-nav a:hover,
+.user-nav a:focus,
+.user-nav button:hover,
+.user-nav button:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: black;
+  background-color: white;
+}
+
+
+.items-in-cart {
+  color: black;
+}
+
+.main-header-info span:last-child {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.slider span {
+  font-size: 60px;
+  line-height: 60.35px;
+}
+
+.slider a {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.bread-crumbs {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.catalog {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.fats label,
+.toppings label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.product-item-name,
+.subscribtion span {
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.features h3,
+.features span {
+  color: #323232;
+}
+
+.blog-article,
+.blog-article a {
+  color: black;
+}
+
+.blog-article a {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.subscribtion span {
+  color: #5a5a5a;
+}
+.contact-us span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.contact-us span:nth-child(2n+1) {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.contact-us .feedback span {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.catalog-paginator {
+  font-weight: 500;
+}
+
+.footer-info {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footer-info a:first-child {
+  font-weight: 700;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}

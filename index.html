@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -116,12 +118,12 @@
           <li class="main-left-banner">
             <h2>Малинка даром!</h2>
             <span tabindex="0">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</span>
-            <a class="main-btn" href="catalog.html">Хочу варенье!</a>
+            <a class="main-btn" href="catalog.html" aria-label="перейти на страницу каталога">Хочу варенье!</a>
           </li>
           <li class="main-right-banner">
             <h2>Шоколадки даром!</h2>
             <span tabindex="0">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</span>
-            <a class="main-btn" href="catalog.html">Хочу шоколадки!</a>
+            <a class="main-btn" href="catalog.html" aria-label="перейти на страницу каталога">Хочу шоколадки!</a>
           </li>
         </ul>
       </section>
@@ -134,7 +136,7 @@
           <p>
             <span>310 &#8381;</span>
             <span>&#047;кг</span>
-            <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+            <span class="product-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
         </li>
@@ -143,7 +145,7 @@
           <p>
             <span>380 &#8381;</span>
             <span>&#047;кг</span>
-            <span>Сливочно-кофейное с кусочками шоколада</span>
+            <span class="product-item-name">Сливочно-кофейное с кусочками шоколада</span>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
         </li>
@@ -152,7 +154,7 @@
           <p>
             <span>355 &#8381;</span>
             <span>&#047;кг</span>
-            <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+            <span class="product-item-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
         </li>
@@ -161,7 +163,7 @@
           <p>
             <span>415 &#8381;</span>
             <span>&#047;кг</span>
-            <span>Сливочное крем-брюле с карамельной подливкой</span>
+            <span class="product-item-name">Сливочное крем-брюле с карамельной подливкой</span>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
         </li>
@@ -216,11 +218,11 @@
             <!-- Скрытый блок,появляется при клике на Форма обратной связи-->
             <form class="feedback" action="">
               <span>Мы обязательно вам ответим!</span>
-              <label for="feedback-name">Имя</label>
+              <label for="feedback-name" class="visually-hidden">Имя</label>
               <input id="feedback-name" class="feedback-field" type="text" placeholder="Как вас зовут?">
-              <label for="feedback-email">Электронная почта</label>
+              <label for="feedback-email" class="visually-hidden">Электронная почта</label>
               <input id="feedback-email" class="feedback-field" type="text" placeholder="Ваша почта для ответа?">
-              <label for="feedback-text">Ваш отзыв</label>
+              <label for="feedback-text" class="visually-hidden">Ваш отзыв</label>
               <textarea class="feedback-textfield" name="feedback-text" id="feedback-text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
               <button class="main-btn" type="submit">Отправить</button>
             </form>
