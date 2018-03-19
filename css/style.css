@@ -33,7 +33,7 @@ color: #ffffff;
 .site-navigation a:focus,
 .sort-list button,
 .sort .user-nav-btn:focus,
-.sort .user-nav-btn:hover { 
+.sort .user-nav-btn:hover {
   color: black;
   background-color: white;
 }
@@ -73,7 +73,19 @@ color: #ffffff;
   font-weight: 400;
 }
 
+.main-left-banner {
+background-image: url(img/rasberry.jpg);
+background-repeat: no-repeat;
+background-color: #cf2a56;
 
+}
+
+.main-right-banner {
+
+  background-image: url(img/chocolate.jpg);
+  background-repeat: no-repeat;
+  background-color: #5f3a25;
+}
 
 .catalog {
   font-size: 35px;
@@ -97,7 +109,17 @@ color: #ffffff;
 .features span {
   color: #323232;
 }
+.features-list {
 
+  background-image: url(img/waffle.jpg);
+  background-color: #efe4cb;
+  background-repeat: no-repeat;
+}
+.blog-article {
+  background-color: #ffffff;
+  background-image: url(img/strawberry-blog.jpg);
+  background-repeat: no-repeat;
+}
 .blog-article,
 .blog-article a {
   color: black;
@@ -107,6 +129,9 @@ color: #ffffff;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
+}
+.subscribtion {
+  background-color: #f8f7f4;
 }
 .subscribtion span {
   color: #5a5a5a;
