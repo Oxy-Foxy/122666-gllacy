@@ -14,7 +14,7 @@
 
       <nav class="main-navigation">
 
-        <ul class="site-navigation">
+        <ul class="site-navigation no-markers">
           <li>
             <a class="site-navigation-current" href="">Каталог</a>
           </li>
@@ -26,7 +26,7 @@
           </li>
         </ul>
 
-        <ul class="user-nav">
+        <ul class="user-nav no-markers">
           <li>
             <button class="user-nav-btn" type="button" name="Поиск">
             <span class="visually-hidden">Поиск</span>
@@ -40,7 +40,7 @@
           </li>
           <!-- товары в корзине, появляются при наведении в корзину-->
         <div class="cart-items">
-          <ul class="cart-items-list">
+          <ul class="cart-items-list no-markers">
             <li class="cart-item">
               <img src="img/cart-item-1.png" alt="" width="35" height="35">
               <span>Пломбир с апельсиновым джемом</span>
@@ -80,12 +80,23 @@
         <h2 class="visually-hidden">Сортировка товаров</h2>
         <form action="" class="sort">
           <label for="sort-by" class="sort-labels">Сортировка:</label>
-          <select name="sort-by" id="sort-by">
-            <option value="popularity">по популярности</option>
-            <option value="price-down">сначала дорогие</option>
-            <option value="price-up">сначала недорогие</option>
-            <option value="fat">по жирности</option>
-          </select>
+          <button class="user-nav-btn" type="button" id="sort-by"><span class="sort-by">по популярности</span></button>
+          <!-- скрытый блок, появляется при нажатии на "по популярности"-->
+            <ul class="sort-list no-markers">
+              <li class="active">
+                <button type="button">по популярности</button>
+              </li>
+              <li>
+                <button type="button">сначала дорогие</button>
+              </li>
+              <li>
+                <button type="button">сначала недорогие</button>
+              </li>
+              <li>
+                <button type="button">по жирности</button>
+              </li>
+            </ul>
+
           <label for="price-range" class="sort-labels">Цена: 100 руб. – 500 руб.</label>
           <input type="range" min="100" max="500" id="price-range">
           <fieldset class="fats">
@@ -117,7 +128,7 @@
       </section>
       <section class="item-list">
         <h2 class="visually-hidden">Список товаров</h2>
-        <ul class="product-list">
+        <ul class="product-list no-markers">
           <li class="product-item" tabindex="0">
             <img src="img/catalog-product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <p>
@@ -227,7 +238,7 @@
             <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
           </li>
         </ul>
-        <ul class="catalog-paginator">
+        <ul class="catalog-paginator no-markers">
           <li>
             <a class="prev disabled" href=""><</a>
           </li>
@@ -255,7 +266,7 @@
 
     <footer class="main-footer">
       <div class="footer-social">
-        <ul>
+        <ul class="no-markers">
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Твиттер</span>
