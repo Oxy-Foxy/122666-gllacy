@@ -74,7 +74,7 @@ color: #ffffff;
 }
 
 .main-left-banner {
-background-image: url(img/rasberry.jpg);
+background-image: url(../img/rasberry.jpg);
 background-repeat: no-repeat;
 background-color: #cf2a56;
 
@@ -82,7 +82,7 @@ background-color: #cf2a56;
 
 .main-right-banner {
 
-  background-image: url(img/chocolate.jpg);
+  background-image: url(../img/chocolate.jpg);
   background-repeat: no-repeat;
   background-color: #5f3a25;
 }
@@ -111,13 +111,13 @@ background-color: #cf2a56;
 }
 .features-list {
 
-  background-image: url(img/waffle.jpg);
+  background-image: url(../img/waffle.jpg);
   background-color: #efe4cb;
   background-repeat: no-repeat;
 }
 .blog-article {
   background-color: #ffffff;
-  background-image: url(img/strawberry-blog.jpg);
+  background-image: url(../img/strawberry-blog.jpg);
   background-repeat: no-repeat;
 }
 .blog-article,
