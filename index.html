@@ -9,78 +9,88 @@
   </head>
   <body>
     <header class="main-header">
+    <div class="container">
+      <div class="top-header-wrapper">
+        <img class="main-header-logo" src="img/logo.svg" alt="Glassy logo" width="154" height="64">
 
-      <img class="main-header-logo" src="img/logo.svg" alt="Glassy logo" width="154" height="64">
-
-      <nav class="main-navigation">
-
-        <ul class="site-navigation no-markers">
-          <li>
-            <a href="">Каталог</a>
-              <!-- Скрытый блок,появляется при наведении на Каталог-->
-              <ul class="catalogue-items no-markers">
-                <li>
-                  <a href="#"><b>Новинки</b></a>
-                </li>
-                <li>
-                  <a href="catalog.html">Сливочное</a>
-                </li>
-                <li>
-                  <a href="#">Щербеты</a>
-                </li>
-                <li>
-                  <a href="#">Фруктовый лёд</a>
-                </li>
-                <li>
-                  <a href="#">Мелорин</a>
-                </li>
-              </ul>
-              <!-- Конец скрытого блока-->
-          </li>
-          <li>
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li>
-            <a href="#">О компании</a>
-          </li>
-        </ul>
-
-        <ul class="user-nav no-markers">
-          <li>
-            <button class="user-nav-btn" type="button" name="Поиск">
-              <span class="visually-hidden">Поиск</span>
-            </button>
-          </li>
-          <li>
-            <button class="user-nav-btn" type="button">Вход</button>
-          </li>
-          <li>
-            <a class="user-nav-btn" href="#" aria-label="Корзина">Пусто</a>
-          </li>
-        </ul>
-
-        <!-- Скрытый блок,появляется при наведении на Вход-->
-        <form class="login-form" action="" method="post">
-          <label for="login-form-email">Электронная почта</label>
-          <input class="main-input-field" id="login-form-email" type="text" name="e-mail" placeholder="Электронная почта">
-          <label for="login-form-password">Пароль</label>
-          <input class="main-input-field" id="login-form-password" type="password" name="password" placeholder="Пароль">
-          <button class="main-btn" type="submit">Войти</button>
-          <a href="">Забыли пароль?</a>
-          <a href="">Новая регистрация</a>
-        </form>
-        <!-- Конец скрытого блока-->
+        <nav class="main-navigation">
+        <div class="main-navigation-wrapper">
+          <ul class="site-navigation no-markers">
+            <li>
+              <a href="">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a href="#">О компании</a>
+            </li>
+          </ul>
+          <ul class="user-nav no-markers">
+            <li>
+              <button class="user-nav-btn" type="button" name="Поиск">
+                <span class="visually-hidden">Поиск</span>
+              </button>
+            </li>
+            <li>
+              <button class="user-nav-btn" type="button">Вход</button>
+            </li>
+            <li>
+              <a class="user-nav-btn" href="#" aria-label="Корзина">Пусто</a>
+            </li>
+          </ul>
+        </div>
 
       </nav>
+      </div>
+          <!--Скрытый блок, появляется при фокусе на Поиск-->
+          <form class="search-field" action="#">
+            <label for="search" class="visually-hidden">Поиск по сайту</label>
+            <input type="search" id="search" placeholder="Что ищем?">
+            <button class="visually-hidden" type="submit" aria-label="искать"></button>
+          </form>
+          <!-- конец скрытого блока-->
+          <!-- Скрытый блок,появляется при наведении на Каталог-->
+          <ul class="catalogue-items no-markers">
+            <li>
+              <a href="#"><b>Новинки</b></a>
+            </li>
+            <li>
+              <a href="catalog.html">Сливочное</a>
+            </li>
+            <li>
+              <a href="#">Щербеты</a>
+            </li>
+            <li>
+              <a href="#">Фруктовый лёд</a>
+            </li>
+            <li>
+              <a href="#">Мелорин</a>
+            </li>
+          </ul>
+          <!-- Конец скрытого блока-->
+          <!-- Скрытый блок,появляется при наведении на Вход-->
+          <form class="login-form" action="#" method="post">
+            <label for="login-form-email">Электронная почта</label>
+            <input class="main-input-field" id="login-form-email" type="text" name="e-mail" placeholder="Электронная почта">
+            <label for="login-form-password">Пароль</label>
+            <input class="main-input-field" id="login-form-password" type="password" name="password" placeholder="Пароль">
+            <button class="main-btn" type="submit">Войти</button>
+            <a href="">Забыли пароль?</a>
+            <a href="">Новая регистрация</a>
+          </form>
+          <!-- Конец скрытого блока-->
 
-      <p class="main-header-info">
-        <span>С 10 до 20, ежедневно</span>
-        <span>8 812 450-25-25</span>
-      </p>
 
+        <p class="main-header-info">
+          <span>С 10 до 20, ежедневно</span>
+          <span>8 812 450-25-25</span>
+        </p>
+    </div>
     </header>
 
     <main>
+    <div class="container">
       <h1 class="visually-hidden">Магазин "Glassy"</h1>
 
       <div class="slider">
@@ -114,56 +124,64 @@
 
       <section class="advertising">
         <h2 class="visually-hidden">Наши акции</h2>
-        <ul class="no-markers">
-          <li class="main-left-banner">
+        <div class="advertising-wrapper">
+          <section class="main-left-banner">
             <h2>Малинка даром!</h2>
             <span tabindex="0">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</span>
             <a class="main-btn" href="catalog.html" aria-label="перейти на страницу каталога">Хочу варенье!</a>
-          </li>
-          <li class="main-right-banner">
+          </section>
+          <section class="main-right-banner">
             <h2>Шоколадки даром!</h2>
             <span tabindex="0">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</span>
             <a class="main-btn" href="catalog.html" aria-label="перейти на страницу каталога">Хочу шоколадки!</a>
-          </li>
-        </ul>
+          </section>
+        </div>
       </section>
 
       <section class="best-products">
       <h2 class="visually-hidden">Лучшая продукция</h2>
       <ul class="best-products-list no-markers">
-        <li tabindex="0">
+        <li  class="product-item">
           <img src="img/catalog-product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p>
-            <span>310 &#8381;</span>
+            <span>310</span>
             <span>&#047;кг</span>
-            <span class="product-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+            <a href="#">
+              <span class="product-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+            </a>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
         </li>
-        <li tabindex="0">
+        <li  class="product-item">
           <img src="img/catalog-product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
           <p>
-            <span>380 &#8381;</span>
+            <span>380</span>
             <span>&#047;кг</span>
-            <span class="product-item-name">Сливочно-кофейное с кусочками шоколада</span>
+            <a href="#">
+              <span class="product-item-name">Сливочно-кофейное с кусочками шоколада</span>
+            </a>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
         </li>
-        <li tabindex="0">
+        <li  class="product-item">
           <img src="img/catalog-product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
           <p>
-            <span>355 &#8381;</span>
+            <span>355</span>
             <span>&#047;кг</span>
-            <span class="product-item-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
+            <a href="#">
+              <span class="product-item-name">Сливочно-клубничное с присыпкой из белого шоколада</span>
+            </a>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
         </li>
-        <li tabindex="0">
+        <li  class="product-item">
           <img src="img/catalog-product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
           <p>
-            <span>415 &#8381;</span>
+            <span>415</span>
             <span>&#047;кг</span>
-            <span class="product-item-name">Сливочное крем-брюле с карамельной подливкой</span>
+            <a href="#">
+              <span class="product-item-name">Сливочное крем-брюле с карамельной подливкой</span>
+            </a>
           </p>
           <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
         </li>
@@ -190,6 +208,7 @@
       </section>
 
       <article class="blog-article">
+        <h2 class="visually-hidden"> Статья из блога</h2>
         <span>Новое в нашем блоге</span>
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
@@ -197,18 +216,18 @@
       <section class="subscribtion">
         <h2 class="visually-hidden">Подписка</h2>
         <span>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </span>
-        <form action="">
+        <form class="subscribe" action="#">
           <label for="subscribe-email" class="visually-hidden">Эллектронная почта</label>
           <input class="main-input-field" id="subscribe-email" type="email" placeholder="Электронная почта">
           <button class="main-btn" type="submit">Войти</button>
         </form>
       </section>
+    </div>
 
       <section class="map">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <img src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <img class="map-image" src="img/map.jpg" alt="ул. Большая Конюшенная 19/8, Санкт-Петербург" width="1200" height="640">
         <div class="contact-us">
-          <p>
             <span>Адрес главного офиса<br>и офлайн-магазина:</span>
             <span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
             <span>Для заказов по телефону:</span>
@@ -216,7 +235,7 @@
             <span>(с 10 до 20 ежедневно)</span>
             <button class="main-btn" type="button">Форма обратной связи</button>
             <!-- Скрытый блок,появляется при клике на Форма обратной связи-->
-            <form class="feedback" action="">
+            <form class="feedback" action="#">
               <span>Мы обязательно вам ответим!</span>
               <label for="feedback-name" class="visually-hidden">Имя</label>
               <input id="feedback-name" class="feedback-field" type="text" placeholder="Как вас зовут?">
@@ -227,52 +246,61 @@
               <button class="main-btn" type="submit">Отправить</button>
             </form>
             <!-- Конец скрытого блока-->
-          </p>
         </div>
       </section>
+
 
     </main>
 
     <footer class="main-footer">
-
+    <div class="container">
+      <div class="footer-wrapper">
       <div class="footer-social">
-        <ul class="no-markers">
+        <ul class="social no-markers">
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Твиттер</span>
+              <img src="img/twitter.svg" alt="Мы в твиттере">
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
               <span class="visually-hidden">Инстаграм</span>
+              <img src="img/instagram.svg" alt="Мы в инстаграме">
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
-              <span class="visually-hidden">Фейсбук</span>
+              <span class="visually-hidden" alt="Мы в фейсбуке">Фейсбук</span>
+              <img src="img/fb.svg">
             </a>
           </li>
           <li>
             <a class="social-button" href="#">
-              <span class="visually-hidden">В контакте</span>
+              <span class="visually-hidden" alt="Мы в контакте">В контакте</span>
+              <img src="img/vk.svg">
             </a>
           </li>
         </ul>
       </div>
 
       <p class="footer-info">
-        <a href="#">Для поставщиков</a>
-        <a href="#">О производстве</a>
-        <a href="#">Наши документы</a>
-        <a href="#">Экологические стандарты</a>
+        <p class="left-footer-info">
+          <a class="info bold" href="#">Для поставщиков</a></br>
+          <a class="info" href="#">О производстве</a>
+        </p>
+        <p class="right-footer-info">
+          <a class="info" href="#">Наши документы</a></br>
+          <a class="info" href="#">Экологические стандарты</a>
+        </p>
       </p>
 
       <p class="footer-copyright">
-        <a href="https://htmlacademy.ru">HTML Academy</a>
+        <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="110" height="40"></a></br>
         <span>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</span>
       </p>
-
+    </div>
+    </div>
     </footer>
-
   </body>
 </html>
