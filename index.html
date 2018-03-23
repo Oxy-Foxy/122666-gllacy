@@ -15,75 +15,73 @@
         <nav class="main-navigation">
           <div class="main-navigation-wrapper">
             <ul class="site-navigation no-markers">
-              <li>
-                <a href="">Каталог</a>
+              <li class="catalogue">
+                <a class="nav-btn" href="catalog.html">Каталог</a>
+                <!-- Скрытый блок,появляется при наведении на Каталог-->
+                <ul class="catalogue-items no-markers">
+                  <li>
+                    <h3>Новинки</h3>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Сливочное</a>
+                  </li>
+                  <li>
+                    <a href="#">Щербеты</a>
+                  </li>
+                  <li>
+                    <a href="#">Фруктовый лёд</a>
+                  </li>
+                  <li>
+                    <a href="#">Мелорин</a>
+                  </li>
+                </ul>
+                <!-- Конец скрытого блока-->
               </li>
               <li>
-                <a href="#">Доставка и оплата</a>
+                <a class="nav-btn" href="shipping.html">Доставка и оплата</a>
               </li>
               <li>
-                <a href="#">О компании</a>
+                <a class="nav-btn" href="info.html">О Компании</a>
               </li>
             </ul>
             <ul class="user-nav no-markers">
-              <li>
-                <button class="user-nav-btn search-btn" type="button" name="Поиск">
-                  <img src="img/search.svg" alt="Поиск">
-                </button>
+              <li class="search">
+                <a class="nav-btn search-btn" href="search.html"></a>
+                <!--Скрытый блок, появляется при фокусе на Поиск-->
+                <form class="search-field" action="#">
+                  <label for="search" class="visually-hidden">Поиск по сайту</label>
+                  <input class="main-input-field " type="search" id="search" placeholder="Что ищем?">
+                  <button class="visually-hidden" type="submit" aria-label="искать"></button>
+                </form>
+                <!-- конец скрытого блока-->
+              </li>
+              <li class="login">
+                <a class="nav-btn login-btn" href="login.html"><span>Вход</span></a>
+                <!-- Скрытый блок,появляется при наведении на Вход-->
+                <form class="login-form" action="#" method="post">
+                  <label class="visually-hidden" for="login-form-email">Электронная почта</label>
+                  <input class="main-input-field input-email" id="login-form-email" type="text" name="e-mail" placeholder="Электронная почта">
+                  <label class="visually-hidden" for="login-form-password">Пароль</label>
+                  <input class="main-input-field input-password" id="login-form-password" type="password" name="password" placeholder="Пароль">
+                  <button class="main-btn submit-login-btn" type="submit">Войти</button>
+                  <p>
+                    <a href="">Забыли пароль?</a><br>
+                    <a href="">Новая регистрация</a>
+                  </p>
+                </form>
+                <!-- Конец скрытого блока-->
               </li>
               <li>
-                <button class="user-nav-btn login-btn" type="button"><span>Вход</span></button>
-              </li>
-              <li>
-                <a class="user-nav-btn cart-btn" href="#" aria-label="Корзина">Пусто</a>
+                <a class="nav-btn cart-btn" href="#" aria-label="Корзина">Пусто</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-          <!--Скрытый блок, появляется при фокусе на Поиск-->
-          <form class="search-field" action="#">
-            <label for="search" class="visually-hidden">Поиск по сайту</label>
-            <input type="search" id="search" placeholder="Что ищем?">
-            <button class="visually-hidden" type="submit" aria-label="искать"></button>
-          </form>
-          <!-- конец скрытого блока-->
-          <!-- Скрытый блок,появляется при наведении на Каталог-->
-          <ul class="catalogue-items no-markers">
-            <li>
-              <a href="#"><b>Новинки</b></a>
-            </li>
-            <li>
-              <a href="catalog.html">Сливочное</a>
-            </li>
-            <li>
-              <a href="#">Щербеты</a>
-            </li>
-            <li>
-              <a href="#">Фруктовый лёд</a>
-            </li>
-            <li>
-              <a href="#">Мелорин</a>
-            </li>
-          </ul>
-          <!-- Конец скрытого блока-->
-          <!-- Скрытый блок,появляется при наведении на Вход-->
-          <form class="login-form" action="#" method="post">
-            <label for="login-form-email">Электронная почта</label>
-            <input class="main-input-field" id="login-form-email" type="text" name="e-mail" placeholder="Электронная почта">
-            <label for="login-form-password">Пароль</label>
-            <input class="main-input-field" id="login-form-password" type="password" name="password" placeholder="Пароль">
-            <button class="main-btn" type="submit">Войти</button>
-            <a href="">Забыли пароль?</a>
-            <a href="">Новая регистрация</a>
-          </form>
-          <!-- Конец скрытого блока-->
-
-
-        <p class="main-header-info">
-          <span>С 10 до 20, ежедневно</span></br>
-          <span>8 812 450-25-25</span>
-        </p>
+      <p class="main-header-info">
+        <span>С 10 до 20, ежедневно</span></br>
+        <span>8 812 450-25-25</span>
+      </p>
     </div>
     </header>
 
@@ -232,16 +230,20 @@
             <span>(с 10 до 20 ежедневно)</span>
             <button class="main-btn" type="button">Форма обратной связи</button>
             <!-- Скрытый блок,появляется при клике на Форма обратной связи-->
-            <form class="feedback" action="#">
-              <span>Мы обязательно вам ответим!</span>
-              <label for="feedback-name" class="visually-hidden">Имя</label>
-              <input id="feedback-name" class="feedback-field" type="text" placeholder="Как вас зовут?">
-              <label for="feedback-email" class="visually-hidden">Электронная почта</label>
-              <input id="feedback-email" class="feedback-field" type="text" placeholder="Ваша почта для ответа?">
-              <label for="feedback-text" class="visually-hidden">Ваш отзыв</label>
-              <textarea class="feedback-textfield" name="feedback-text" id="feedback-text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
-              <button class="main-btn" type="submit">Отправить</button>
-            </form>
+            <div class="feedback-wrapper">
+              <form class="feedback" action="#">
+                <span>Мы обязательно вам ответим!</span>
+                <button class="feedback-close" type="button" aria-label="Закрыть окно обратной связи"></button>
+                <label for="feedback-name" class="visually-hidden">Имя</label>
+                <input id="feedback-name" class="feedback-field" type="text" placeholder="Как вас зовут?">
+                <label for="feedback-email" class="visually-hidden">Электронная почта</label>
+                <input id="feedback-email" class="feedback-field" type="text" placeholder="Ваша почта для ответа?">
+                <label for="feedback-text" class="visually-hidden">Ваш отзыв</label>
+                <textarea class="feedback-textfield" name="feedback-text" id="feedback-text" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+                <button class="main-btn submit-feedback-btn" type="submit">Отправить</button>
+              </form>
+            </div>
+
             <!-- Конец скрытого блока-->
         </div>
       </section>

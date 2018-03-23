@@ -15,71 +15,71 @@
         <nav class="main-navigation">
           <div class="main-navigation-wrapper">
             <ul class="site-navigation no-markers">
-              <li>
-                <a class="site-navigation-current" href="">Каталог</a>
+              <li class="catalogue">
+                <a class="nav-btn site-navigation-current" href="catalog.html">Каталог</a>
+                <!-- Скрытый блок,появляется при наведении на Каталог-->
+                <ul class="catalogue-items no-markers">
+                  <li>
+                    <h3>Новинки</h3>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Сливочное</a>
+                  </li>
+                  <li>
+                    <a href="sherbet.html">Щербеты</a>
+                  </li>
+                  <li>
+                    <a href="fruit-ice.html">Фруктовый лёд</a>
+                  </li>
+                  <li>
+                    <a href="melorine.html">Мелорин</a>
+                  </li>
+                </ul>
+                <!-- Конец скрытого блока-->
               </li>
               <li>
-                <a href="#">Доставка и оплата</a>
+                <a class="nav-btn" href="shipping.html">Доставка и оплата</a>
               </li>
               <li>
-                <a href="#">О компании</a>
+                <a class="nav-btn" href="info.html">О Компании</a>
               </li>
             </ul>
             <ul class="user-nav no-markers">
-              <li>
-                <button class="user-nav-btn search-btn" type="button" name="Поиск">
-                  <img src="img/search.svg" alt="Поиск">
-                </button>
+              <li class="search">
+                <a class="nav-btn search-btn" href="search.html">
+                  <!-- <img src="img/search.svg" alt=""> -->
+                </a>
+                <!--Скрытый блок, появляется при фокусе на Поиск-->
+                <form class="search-field" action="#">
+                  <label for="search" class="visually-hidden">Поиск по сайту</label>
+                  <input class="main-input-field" type="search" id="search" placeholder="Что ищем?">
+                  <button class="visually-hidden" type="submit" aria-label="искать"></button>
+                </form>
+                <!-- конец скрытого блока-->
               </li>
               <li>
-                <button class="user-nav-btn login-btn" type="button"><span>Вход</span></button>
+                <a class="nav-btn login-btn" href="login.html"><span>Вход</span></a>
+                <!-- Скрытый блок,появляется при наведении на Вход-->
+                <form class="login-form" action="#" method="post">
+                  <label for="login-form-email">Электронная почта</label>
+                  <input class="main-input-field input-email" id="login-form-email" type="text" name="e-mail" placeholder="Электронная почта">
+                  <label for="login-form-password">Пароль</label>
+                  <input class="main-input-field input-password" id="login-form-password" type="password" name="password" placeholder="Пароль">
+                  <button class="main-btn submit-login-btn" type="submit">Войти</button>
+                  <a href="">Забыли пароль?</a>
+                  <a href="">Новая регистрация</a>
+                </form>
+                <!-- Конец скрытого блока-->
               </li>
               <li>
-                <a class="user-nav-btn items-in-cart cart-btn" href="#"><span>2 товара</span></a>
+                <a class="nav-btn items-in-cart cart-btn" href="#"><span>2 товара</span></a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
-        <!-- Скрытый блок,появляется при наведении на Каталог-->
-        <ul class="catalogue-items no-markers">
-          <li>
-            <a href="#"><b>Новинки</b></a>
-          </li>
-          <li>
-            <a href="catalog.html">Сливочное</a>
-          </li>
-          <li>
-            <a href="#">Щербеты</a>
-          </li>
-          <li>
-            <a href="#">Фруктовый лёд</a>
-          </li>
-          <li>
-            <a href="#">Мелорин</a>
-          </li>
-        </ul>
-        <!-- Конец скрытого блока-->
 
-        <!--Скрытый блок, появляется при фокусе на Поиск-->
-        <form class="search-field" action="#">
-          <label for="search" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" id="search" placeholder="Что ищем?">
-          <button class="visually-hidden" type="submit" aria-label="искать"></button>
-        </form>
-        <!-- конец скрытого блока-->
-        <!-- Скрытый блок,появляется при наведении на Вход-->
-        <form class="login-form" action="#s" method="post">
-          <label for="login-form-email">Электронная почта</label>
-          <input class="main-input-field" id="login-form-email" type="text" name="e-mail" placeholder="Электронная почта">
-          <label for="login-form-password">Пароль</label>
-          <input class="main-input-field" id="login-form-password" type="password" name="password" placeholder="Пароль">
-          <button class="main-btn" type="submit">Войти</button>
-          <a href="">Забыли пароль?</a>
-          <a href="">Новая регистрация</a>
-        </form>
-        <!-- Конец скрытого блока-->
-        <!-- товары в корзине, появляются при наведении в корзину-->
+      <!-- товары в корзине, появляются при наведении в корзину-->
       <div class="cart-items">
         <ul class="cart-items-list no-markers">
           <li class="cart-item">
