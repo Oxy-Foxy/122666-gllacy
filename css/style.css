@@ -481,8 +481,7 @@ span.kg {
 
 
 
-.product-item-name,
-.subscribtion span {
+.product-item-name {
   line-height: 22px;
   font-weight: 500;
 }
@@ -494,6 +493,7 @@ span.kg {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
+  margin-bottom: 40px;
 }
 
 .features h3,
@@ -572,9 +572,20 @@ span.kg {
 
 
 .blog-article {
+  display: inline-block;
   background-color: #ffffff;
   background-image: url(../img/strawberry-blog.jpg);
   background-repeat: no-repeat;
+  background-position: -52px -222px;
+  width: 520px;
+  height: 170px;
+  border-radius: 15px;
+  padding: 26px 20px;
+
+}
+
+.blog-article p {
+  margin: 0;
 }
 .blog-article,
 .blog-article a {
@@ -582,16 +593,63 @@ span.kg {
 }
 
 .blog-article a {
+  display: inline-block;
+  margin-top: 8px;
+  width: 282px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
 }
+
+
 .subscribtion {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 24px;
+  vertical-align: top;
+  background-image: url(../img/postal-gradient.png);
+  background-size: 560px 220px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.subscribtion-wrapper{
   background-color: #f8f7f4;
+  width: 506px;
+  height: 144px;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 32px;
+  padding-bottom: 34px;
 }
+
 .subscribtion span {
+  display: inline-block;
   color: #5a5a5a;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 36px;
 }
+.main-input-field {
+  width: 348px;
+  height: 42px;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
+  padding-left: 15px;
+}
+
+.submit-subscribe {
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+
+
 .contact-us span {
   font-size: 18px;
   line-height: 24px;
