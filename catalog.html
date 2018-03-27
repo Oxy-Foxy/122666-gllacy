@@ -57,8 +57,10 @@
                 </form>
                 <!-- конец скрытого блока-->
               </li>
-              <li>
-                <a class="nav-btn login-btn" href="login.html"><span>Вход</span></a>
+              <li class="login">
+                <a class="nav-btn login-btn" href="login.html">
+                  <span>Вход</span>
+                </a>
                 <!-- Скрытый блок,появляется при наведении на Вход-->
                 <form class="login-form" action="#" method="post">
                   <label for="login-form-email">Электронная почта</label>
@@ -71,36 +73,44 @@
                 </form>
                 <!-- Конец скрытого блока-->
               </li>
-              <li>
-                <a class="nav-btn items-in-cart cart-btn" href="#"><span>2 товара</span></a>
+              <li class="cart">
+                <a class="nav-btn items-in-cart cart-btn" href="#">
+                  <span>2 товара</span>
+                </a>
+                <!-- товары в корзине, появляются при наведении в корзину-->
+                <div class="cart-items">
+                  <ul class="cart-items-list no-markers">
+                    <li class="cart-item">
+                      <img src="img/cart-item-1.png" alt="" width="35" height="35">
+                      <p class="item-description">
+                        <span>Пломбир с апельсиновым джемом</span>
+                        <span>1,5 кг х 200 руб.</span>
+                        <span>300 руб.</span>
+                      </p>
+                      <button class="delete-item-btn" type="button" aria-label="Удалить товар из корзины"></button>
+                    </li>
+                    <li class="cart-item">
+                      <img src="img/cart-item-2.png" alt="" width="35" height="35">
+                      <p class="item-description">
+                        <span>Клубничный пломбир с присыпкой  из белого шоколада</span>
+                        <span>1,5 кг х 300 руб.</span>
+                        <span>450 руб.</span>
+                      </p>
+                      <button class="delete-item-btn" type="button" aria-label="Удалить товар из корзины"></button>
+                    </li>
+                  </ul>
+                  <p class="total-price">
+                    <span>Итого: </span>
+                    <span>750 руб.</span>
+                  </p>
+                  <a class="main-btn" href="#">Оформить заказ</a>
+                </div>
+                  <!-- конец скрытого блока -->
               </li>
             </ul>
           </div>
         </nav>
       </div>
-
-      <!-- товары в корзине, появляются при наведении в корзину-->
-      <div class="cart-items">
-        <ul class="cart-items-list no-markers">
-          <li class="cart-item">
-            <img src="img/cart-item-1.png" alt="" width="35" height="35">
-            <span>Пломбир с апельсиновым джемом</span>
-            <span>1,5 кг х 200 руб.</span>
-            <span>300 руб.</span>
-            <button type="button" aria-label="Удалить товар из корзины">x</button>
-          </li>
-          <li class="cart-item">
-            <img src="img/cart-item-2.png" alt="" width="35" height="35">
-            <span>Клубничный пломбир с присыпкой  из белого шоколада</span>
-            <span>1,5 кг х 300 руб.</span>
-            <span>450 руб.</span>
-            <button type="button" aria-label="Удалить товар из корзины">x</button>
-          </li>
-        </ul>
-        <span>Итого: 750 руб.</span>
-        <a class="main-btn" href="#">Оформить заказ</a>
-      </div>
-        <!-- конец скрытого блока -->
 
 
       <p class="main-header-info">

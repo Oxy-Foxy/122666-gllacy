@@ -411,12 +411,6 @@ a.nav-btn.items-in-cart:before {
   font-weight: 400;
 }
 
-/* временно */
-
-.cart-items {
-  border: 1px solid gray;
-}
-
 /* скрытые элементы*/
 
 /* поиск*/
@@ -564,6 +558,7 @@ li.login {
   border-radius: 5px;
   border: none;
   z-index: 10;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 .login-form input {
@@ -680,3 +675,113 @@ li.login {
   box-shadow: none;
 }
 /*конец формы обратной связи*/
+
+/* товары в корзине */
+li.cart {
+  position: relative;
+}
+
+.cart-items {
+  display: none;
+  position: absolute;
+  left: -418px;
+  top: 27px;
+  z-index: 1;
+  width: 500px;
+  min-height: 203px;
+  background-color: #f8f7f4;
+  border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+  color: black;
+  padding: 15px 20px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.cart-items-list {
+  padding: 0;
+  margin-bottom: 40px;
+  padding-right: 14px;
+}
+
+.cart-items-list::after {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  content:"";
+  width: 500px;
+  height: 1px;
+  background-color: #d1d0ce;
+}
+
+.cart-items-list .cart-item {
+  position: relative;
+  padding-left: 26px;
+  margin: 0;
+  min-height: 35px;
+  margin-bottom: 20px;
+}
+
+.cart-item img{
+  float: left;
+}
+
+.cart-item p {
+  margin: 0;
+  padding-left: 13px;
+  min-height: inherit;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.item-description span{
+  display: flex;
+  align-items: center;
+}
+
+.cart-item span:first-of-type {
+  flex-wrap: wrap;
+  width: 216px;
+}
+
+.delete-item-btn {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/cross-small.svg);
+  background-repeat: no-repeat;
+}
+
+p.total-price {
+  display: block;
+  text-align: right;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.cart-items a {
+  display: inline-block;
+  float: right;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  border-top-left-radius: 15px 23px;
+  border-top-right-radius: 15px 23px;
+  border-bottom-left-radius: 15px 23px;
+  border-bottom-right-radius: 15px 23px;
+  color: white;
+  text-decoration: none;
+
+}
