@@ -419,10 +419,10 @@ a.nav-btn.items-in-cart:before {
 .product-item {
   position: relative;
   width: 266px;
-  min-height: 402px;
+  min-height: 362px;
 }
 
-.product-item::before {
+.best-products-list .product-item::before {
   position: absolute;
   content: "";
   width: 61px;
@@ -487,16 +487,90 @@ span.kg {
   font-weight: 500;
 }
 
+.features {
+  background-image: url(../img/waffle.jpg);
+  background-color: #efe4cb;
+  padding-top: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
 .features h3,
 .features span {
   color: #323232;
 }
-.features-list {
 
-  background-image: url(../img/waffle.jpg);
-  background-color: #efe4cb;
-  background-repeat: no-repeat;
+.features h3 {
+  margin: 0;
+  margin-bottom: 19px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
 }
+
+.features-list {
+  position: relative;
+}
+.features-list span {
+  display: inline-block;
+  width: 481px;
+  padding-left: 56px;
+  margin-bottom: 25px;
+  vertical-align: top;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.features-list span:nth-child(2n) {
+  margin-left: 26px;
+}
+
+.features-list span:nth-child(1)::before {
+  position: absolute;
+  left: 0px;
+  top: -13px;
+  content: "";
+  background-image: url(../img/ice-cream.svg);
+  background-repeat: no-repeat;
+  background-size: 51px 51px;
+  width: 51px;
+  height: 51px;
+}
+.features-list span:nth-child(2)::before {
+  position: absolute;
+  left: 565px;
+  top: -13px;
+  content: "";
+  background-image: url(../img/cow.svg);
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 52px;
+}
+.features-list span:nth-child(3)::before {
+  position: absolute;
+  left: 0px;
+  top: 75px;
+  content: "";
+  background-image: url(../img/leaf.svg);
+  background-repeat: no-repeat;
+  width: 52px;
+  height: 52px;
+}
+.features-list span:nth-child(4)::before {
+  position: absolute;
+  left: 565px;
+  top: 75px;
+  content: "";
+  background-image: url(../img/thermometer.svg);
+  background-repeat: no-repeat;
+  width: 51px;
+  height: 51px;
+}
+
+
+
+
 .blog-article {
   background-color: #ffffff;
   background-image: url(../img/strawberry-blog.jpg);
