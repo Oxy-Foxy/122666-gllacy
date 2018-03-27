@@ -23,7 +23,6 @@ button {
   box-shadow: none;
   background-image: linear-gradient(to top, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
   box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
-
 }
 
 .visually-hidden {
@@ -240,7 +239,7 @@ a.nav-btn.items-in-cart:before {
 .slider {
   position: relative;
   padding-top: 266px;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
   text-align: center;
   color: #ffffff;
 }
@@ -340,6 +339,7 @@ a.nav-btn.items-in-cart:before {
   background-color: #ffffff;
 }
 
+/* main*/
 
 
 .bread-crumbs,
@@ -349,26 +349,60 @@ a.nav-btn.items-in-cart:before {
   font-weight: 400;
 }
 
-
-.main-left-banner {
-  background-image: url(../img/rasberry.jpg);
-  background-repeat: no-repeat;
-  background-color: #cf2a56;
-  width: 560px;
-}
-
-.main-right-banner {
-  background-image: url(../img/chocolate.jpg);
-  background-repeat: no-repeat;
-  background-color: #5f3a25;
-  width: 560px;
-}
-
 .advertising-wrapper {
   width: 100%;
   min-height: 230px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
+}
+
+.advertising-wrapper section {
+  padding: 18px 20px;
+  border-radius: 15px;
+}
+
+.advertising-wrapper h3 {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.advertising-wrapper span {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.advertising-wrapper a {
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 20px;
+  font-size: 18px;
+  line-height: 24px;
+  text-decoration: none;
+  margin-top: 42px;
+  float: right;
+
+}
+
+.main-left-banner {
+  background-size: 787px 410px;
+  background-image: url(../img/rasberry.jpg);
+  background-repeat: no-repeat;
+  background-position: -50px -92px;
+  background-color: #cf2a56;
+  width: 520px;
+}
+
+.main-right-banner {
+  background-size: 787px 410px;
+  background-image: url(../img/chocolate.jpg);
+  background-repeat: no-repeat;
+  background-position: -200px -170px;
+  background-color: #5f3a25;
+  width: 520px;
 }
 
 
@@ -383,9 +417,55 @@ a.nav-btn.items-in-cart:before {
 }
 
 .product-item {
+  position: relative;
   width: 266px;
   min-height: 402px;
 }
+
+.product-item::before {
+  position: absolute;
+  content: "";
+  width: 61px;
+  height: 61px;
+  background-image: url(../img/hit.svg);
+
+}
+
+.product-item img {
+  border-radius: 51%;
+}
+
+img.rubles {
+  vertical-align: baseline;
+  margin-bottom: -2px;
+}
+
+.product-item p {
+  margin: 0;
+  position: relative;
+  top: -60px;
+  vertical-align: bottom;
+}
+
+.product-item span {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+  }
+
+span.kg {
+  font-size: 29px;
+}
+
+.product-item a.product-item-name {
+  position: relative;
+  top: -40px;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
 
 .catalog {
   font-size: 35px;
@@ -399,17 +479,7 @@ a.nav-btn.items-in-cart:before {
   font-weight: 500;
 }
 
-.product-item span {
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: 700;
-  }
 
-.product-item .product-item-name {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-}
 
 .product-item-name,
 .subscribtion span {
