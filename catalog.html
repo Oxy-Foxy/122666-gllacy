@@ -118,7 +118,7 @@
           </p>
           <p class="bread-crumbs">
             <a href="index.html">Главная</a>
-            <a href="#">Каталог</a>
+            <a href="catalog.html">Каталог</a>
             <span>Сливочное</span>
           </p>
         </header>
@@ -128,51 +128,60 @@
           <section class="item-sort">
             <h2 class="visually-hidden">Сортировка товаров</h2>
             <form action="#" class="sort">
-              <label for="sort-by" class="sort-labels">Сортировка:</label>
-              <button class="user-nav-btn" type="button" id="sort-by"><span class="sort-by">по популярности</span></button>
-              <label for="price-range" class="sort-labels">Цена: 100 руб. – 500 руб.</label>
-              <input type="range" min="100" max="500" id="price-range">
-              <fieldset class="fats">
-                <legend class="sort-labels">Жирность:</legend>
-                <input class="fats-radio-btn" type="radio" id="zero" name="fats">
-                <label for="zero">0%</label>
-                <input class="fats-radio-btn" type="radio" id="under-ten" name="fats" checked>
-                <label for="under-ten">до 10%</label>
-                <input class="fats-radio-btn" type="radio" id="under-thirty" name="fats">
-                <label for="under-thirty">до 30%</label>
-                <input class="fats-radio-btn" type="radio" id="thirty-more" name="fats">
-                <label for="thirty-more">выше 30%</label>
-              </fieldset>
-              <fieldset class="toppings">
-                <legend class="sort-labels">Наполнители:</legend>
-                <input class="toppings-checkbox" type="checkbox" id="choco" name="choco" checked>
-                <label for="choco">шоколадные</label>
-                <input class="toppings-checkbox" type="checkbox" id="sugars" name="sugars" checked>
-                <label for="sugars">сахарные присыпки</label>
-                <input class="toppings-checkbox" type="checkbox" id="fruits" name="fruits">
-                <label for="fruits">фрукты</label>
-                <input class="toppings-checkbox" type="checkbox" id="syrop" name="syrop">
-                <label for="syrop">сироп</label>
-                <input class="toppings-checkbox" type="checkbox" id="jam" name="jam">
-                <label for="jam">джем</label>
-              </fieldset>
-              <button class="user-nav-btn" type="submit">Применить</button>
-              <!-- скрытый блок, появляется при нажатии на "по популярности"-->
-                <ul class="sort-list no-markers">
-                  <li class="active">
-                    <button type="button">по популярности</button>
-                  </li>
-                  <li>
-                    <button type="button">сначала дорогие</button>
-                  </li>
-                  <li>
-                    <button type="button">сначала недорогие</button>
-                  </li>
-                  <li>
-                    <button type="button">по жирности</button>
-                  </li>
-                </ul>
-              <!-- конец скрытого блока-->
+              <div class="sort-block">
+                <div class="sorting-select">
+                  <label for="sort-by" class="sort-labels">Сортировка:</label>
+                  <div class="select-option">
+                    <select class="sort-by">
+                      <option value="по популярности">по популярности</option>
+                      <option value="сначала недорогие">сначала недорогие</option>
+                      <option value="сначала дорогие">сначала дорогие</option>
+                      <option value="по жирности">по жирности</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="range-select">
+                  <label for="price-range" class="sort-labels">Цена: 100 руб. – 500 руб.</label>
+                  <div class="price-range">
+                    <div class="sort-btn" id="price-range">
+                      <div class="range"></div>
+                      <div class="ranged">
+                        <div class="ranged-btn min-btn"></div>
+                        <div class="ranged-btn max-btn"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="fats-select">
+                  <label for="fats" class="sort-labels">Жирность:</label>
+                  <div class="sort-btn fats" id="fats">
+                    <input class="visually-hidden" type="radio" id="zero" name="fats">
+                    <label for="zero">0%</label>
+                    <input class="visually-hidden" type="radio" id="under-ten" name="fats" checked>
+                    <label for="under-ten">до 10%</label>
+                    <input class="visually-hidden" type="radio" id="under-thirty" name="fats">
+                    <label for="under-thirty">до 30%</label>
+                    <input class="visually-hidden" type="radio" id="thirty-more" name="fats">
+                    <label for="thirty-more">выше 30%</label>
+                  </div>
+                </div>
+              </div>
+              <div class="toppings-select">
+                <label for="toppings" class="sort-labels">Наполнители:</label>
+                <div class="toppings" id="toppings">
+                  <input class="visually-hidden" type="checkbox" id="choco" name="choco" checked>
+                  <label for="choco">шоколадные</label>
+                  <input class="visually-hidden" type="checkbox" id="sugars" name="sugars" checked>
+                  <label for="sugars">сахарные присыпки</label>
+                  <input class="visually-hidden" type="checkbox" id="fruits" name="fruits">
+                  <label for="fruits">фрукты</label>
+                  <input class="visually-hidden" type="checkbox" id="syrop" name="syrop">
+                  <label for="syrop">сиропы</label>
+                  <input class="visually-hidden" type="checkbox" id="jam" name="jam">
+                  <label for="jam">джемы</label>
+                </div>
+              </div>
+              <button class="sort-btn submit-sorting" type="submit">Применить</button>
             </form>
           </section>
           <section class="item-list">
@@ -368,7 +377,7 @@
             </p>
 
             <p class="footer-copyright">
-              <a href="https://htmlacademy.ru"><img src="img/logo-htmlacademy-small.svg" width="110" height="40"></a></br>
+              <a class="academy-logo" href="https://htmlacademy.ru"></a></br>
               <span>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017</span>
             </p>
           </div>
