@@ -12,7 +12,7 @@
       <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
       <input class="visually-hidden" type="radio" id="product-2" name="toggle">
       <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-      <div class="site-wrapper">
+      <div class="index-wrapper">
         <div class="container">
           <header class="main-header">
             <div class="top-header-wrapper">
@@ -21,7 +21,7 @@
                 <div class="main-navigation-wrapper">
                   <ul class="site-navigation no-markers">
                     <li class="catalogue">
-                      <a class="nav-btn" href="catalog.html"><span class="index-underline">Каталог</span></a>
+                      <a class="nav-btn" href="catalog.html"><span class="underline">Каталог</span></a>
                       <!-- Скрытый блок,появляется при наведении на Каталог-->
                       <ul class="catalogue-items no-markers">
                         <li>
@@ -31,22 +31,22 @@
                           <a href="catalog.html">Сливочное</a>
                         </li>
                         <li>
-                          <a href="#">Щербеты</a>
+                          <a href="sherbet.html">Щербеты</a>
                         </li>
                         <li>
-                          <a href="#">Фруктовый лёд</a>
+                          <a href="fruit-ice.html">Фруктовый лёд</a>
                         </li>
                         <li>
-                          <a href="#">Мелорин</a>
+                          <a href="melorine.html">Мелорин</a>
                         </li>
                       </ul>
                       <!-- Конец скрытого блока-->
                     </li>
                     <li>
-                      <a class="nav-btn" href="shipping.html"><span class="index-underline">Доставка и оплата</span></a>
+                      <a class="nav-btn" href="shipping.html"><span class="underline">Доставка и оплата</span></a>
                     </li>
                     <li>
-                      <a class="nav-btn" href="info.html"><span class="index-underline">О Компании</span></a>
+                      <a class="nav-btn" href="info.html"><span class="underline">О Компании</span></a>
                     </li>
                   </ul>
                   <ul class="user-nav no-markers">
@@ -70,14 +70,14 @@
                         <input class="main-input-field input-password" id="login-form-password" type="password" name="password" placeholder="Пароль">
                         <button class="main-btn submit-login-btn" type="submit">Войти</button>
                         <p>
-                          <a href="">Забыли пароль?</a><br>
-                          <a href="">Новая регистрация</a>
+                          <a class="login-not-possible" href="change-password.html">Забыли пароль?</a><br>
+                          <a class="login-not-possible" href="registration.html">Новая регистрация</a>
                         </p>
                       </form>
                       <!-- Конец скрытого блока-->
                     </li>
                     <li>
-                      <a class="nav-btn cart-btn" href="#" aria-label="Корзина">Пусто</a>
+                      <a class="nav-btn cart-btn" href="cart-items.html" aria-label="Корзина">Пусто</a>
                     </li>
                   </ul>
                 </div>
@@ -99,19 +99,19 @@
                 <h3 class="slide-title">
                   Крем-брюле и пломбир с малиновым джемом
                 </h3>
-                <a class="button slide-button" href="#">Давайте оба!</a>
+                <a class="button main-btn slide-button" href="#">Давайте оба!</a>
               </li>
               <li class="slider-item slide" id="slide2">
                 <h3 class="slide-title">
                   Шоколадный пломбир и лимонный сорбет
                 </h3>
-                <a class="button slide-button" href="#">Давайте оба!</a>
+                <a class="button main-btn slide-button" href="#">Давайте оба!</a>
               </li>
               <li class="slider-item slide" id="slide3">
                 <h3 class="slide-title">
                   Пломбир с помадкой и клубничный щербет
                 </h3>
-                <a class="button slide-button" href="#">Давайте оба!</a>
+                <a class="button main-btn slide-button" href="#">Давайте оба!</a>
               </li>
             </ul>
           </section>
@@ -135,45 +135,49 @@
             <section class="best-products">
               <h2 class="visually-hidden">Лучшая продукция</h2>
               <ul class="best-products-list no-markers">
-                <li  class="product-item">
-                  <img src="img/catalog-product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                  <p>
-                    <span class="item-price">310</span>
-                    <img class="rubles" src="img/ruble.svg" alt="рублей">
-                    <span class="kg">&#047;кг</span>
-                  </p>
-                  <a href="#" class="product-item-name"><span class="index-underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
-                  <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
+                <li class="product-item">
+                  <div class="item">
+                    <img src="img/catalog-product-1.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                    <p class="price">
+                      <span class="item-price">310</span>
+                      <span class="kg">&#047;кг</span>
+                    </p>
+                    <a href="#" class="product-item-name"><span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span></a>
+                    <a href="#" class="main-btn see-item">Быстрый просмотр</a>
+                  </div>
                 </li>
-                <li  class="product-item">
+                <li class="product-item">
+                  <div class="item">
                   <img src="img/catalog-product-2.jpg" alt="Сливочно-кофейное с кусочками шоколада">
-                  <p>
+                  <p class="price">
                     <span class="item-price">380</span>
-                    <img class="rubles" src="img/ruble.svg" alt="рублей">
-                    <span class="kg">&#047;кг</span>
+                      <span class="kg">&#047;кг</span>
                   </p>
-                  <a href="#" class="product-item-name"><span class="index-underline">Сливочно-кофейное с кусочками шоколада</span></a>
-                  <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
+                    <a href="#" class="product-item-name"><span class="underline">Сливочно-кофейное с кусочками шоколада</span></a>
+                  <a href="#" class="main-btn see-item">Быстрый просмотр</a>
+                </div>
                 </li>
-                <li  class="product-item">
+                <li class="product-item">
+                  <div class="item">
                   <img src="img/catalog-product-3.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-                  <p>
+                  <p class="price">
                     <span class="item-price">355</span>
-                    <img class="rubles" src="img/ruble.svg" alt="рублей">
-                    <span class="kg">&#047;кг</span>
+                      <span class="kg">&#047;кг</span>
                   </p>
-                  <a href="#" class="product-item-name"><span class="index-underline">Сливочно-клубничное с присыпкой из белого шоколада</span></a>
-                  <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
+                    <a href="#" class="product-item-name"><span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span></a>
+                  <a href="#" class="main-btn see-item">Быстрый просмотр</a>
+                </div>
                 </li>
-                <li  class="product-item">
+                <li class="product-item">
+                  <div class="item">
                   <img src="img/catalog-product-4.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
-                  <p>
+                  <p class="price">
                     <span class="item-price">415</span>
-                    <img class="rubles" src="img/ruble.svg" alt="рублей">
-                    <span class="kg">&#047;кг</span>
+                      <span class="kg">&#047;кг</span>
                   </p>
-                  <a href="#" class="product-item-name"><span class="index-underline">Сливочное крем-брюле с карамельной подливкой</span></a>
-                  <a href="#" class="main-btn visually-hidden">Быстрый просмотр</a>
+                    <a href="#" class="product-item-name"><span class="underline">Сливочное крем-брюле с карамельной подливкой</span></a>
+                  <a href="#" class="main-btn see-item">Быстрый просмотр</a>
+                </div>
                 </li>
               </ul>
             </section>
@@ -239,28 +243,16 @@
             <div class="footer-social">
               <ul class="social no-markers">
                 <li>
-                  <a class="social-button twitter" href="#">
-                    <!-- <span class="visually-hidden">Твиттер</span>
-                    <img src="img/twitter.svg" alt="Мы в твиттере"> -->
-                  </a>
+                  <a class="social-button twitter" href="#"></a>
                 </li>
                 <li>
-                  <a class="social-button instagram" href="#">
-                    <!-- <span class="visually-hidden">Инстаграм</span>
-                    <img src="img/instagram.svg" alt="Мы в инстаграме"> -->
-                  </a>
+                  <a class="social-button instagram" href="#"></a>
                 </li>
                 <li>
-                  <a class="social-button facebook" href="#">
-                    <!-- <span class="visually-hidden" alt="Мы в фейсбуке">Фейсбук</span>
-                    <img src="img/fb.svg"> -->
-                  </a>
+                  <a class="social-button facebook" href="#"></a>
                 </li>
                 <li>
-                  <a class="social-button vkontakte" href="#">
-                    <!-- <span class="visually-hidden" alt="Мы в контакте">В контакте</span>
-                    <img src="img/vk.svg"> -->
-                  </a>
+                  <a class="social-button vkontakte" href="#"></a>
                 </li>
               </ul>
             </div>
