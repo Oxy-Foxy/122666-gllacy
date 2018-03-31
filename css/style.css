@@ -154,7 +154,7 @@ a[href="catalog.html"]:focus ~ .catalogue-items {
 }
 
 .user-nav li {
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .user-nav {
@@ -292,7 +292,7 @@ a.items-in-cart:focus ~ div.cart-items {
 .slider {
   position: relative;
   padding-top: 273px;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
   text-align: center;
   color: #ffffff;
 }
@@ -310,7 +310,7 @@ a.items-in-cart:focus ~ div.cart-items {
 .slide-title {
   width: 700px;
   margin: 0 auto;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 800;
@@ -426,9 +426,10 @@ a.breadcrumbs:active span {
 }
 
 /* main*/
-.main-catalog {
+/* .main-catalog {
   border-bottom: 1px solid #a9bbb1;
-}
+
+} */
 
 .bread-crumbs,
 .sort-list li {
@@ -459,7 +460,7 @@ h1.catalog {
 
 .sorting-select {
   display: inline-block;
-  margin-right: 9px;
+  margin-right: 10px;
 }
 
 .sort label,
@@ -468,7 +469,7 @@ h1.catalog {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   margin-left: 16px;
 }
 
@@ -481,7 +482,7 @@ h1.catalog {
 .select-option {
   width: 157px;
   height: 39px;
-  padding-right: 37px;
+  padding-right: 36px;
   border-radius: 20px;
   margin-right: 0;
 }
@@ -592,7 +593,7 @@ h1.catalog {
   top: -7px;
   content: "";
   width: 22px;
-  height: 22px;
+  height: 23px;
   background-image: url(../img/filter-button.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -618,7 +619,7 @@ h1.catalog {
 
 .fats {
   position: relative;
-  padding-top: 10px;
+  padding-top: 11px;
   padding-bottom: 10px;
   padding-left: 14px;
   padding-right: 14px;
@@ -656,19 +657,19 @@ h1.catalog {
 }
 
 .fats label:first-of-type::before {
-  left: 13px;
+  left: 14px;
 }
 
 .fats label:nth-of-type(2)::before {
-  left: 84px;
+  left: 85px;
 }
 
 .fats label:nth-of-type(3)::before {
-  left: 184px;
+  left: 188px;
 }
 
 .fats label:nth-of-type(4)::before {
-  left: 290px;
+  left: 289px;
 }
 
 #zero:checked ~ label[for="zero"]::before,
@@ -694,7 +695,7 @@ h1.catalog {
 .toppings {
   position: relative;
   padding-top: 11px;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   padding-left: 15px;
   padding-right: 6px;
   background-color: rgba(255,255,255,0.2);
@@ -732,16 +733,16 @@ h1.catalog {
 }
 
 .toppings label:nth-of-type(1)::before {
-    left: 13px;
+    left: 14px;
 }
 
 
 .toppings label:nth-of-type(2)::before {
-    left: 162px;
+    left: 163px;
 }
 
 .toppings label:nth-of-type(3)::before {
-  left: 368px;
+  left: 367px;
 }
 
 .toppings label:nth-of-type(4)::before {
@@ -749,7 +750,7 @@ h1.catalog {
 }
 
 .toppings label:nth-of-type(5)::before {
-  left: 591px;
+  left: 592px;
 }
 
 #choco:checked ~ label[for="choco"]::before,
@@ -801,13 +802,13 @@ h1.catalog {
 }
 
 .advertising-wrapper section {
-  padding: 17px 20px;
+  padding: 16px 20px;
   border-radius: 15px;
 }
 
 .advertising-wrapper h3 {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
@@ -825,7 +826,7 @@ h1.catalog {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
-  margin-top: 42px;
+  margin-top: 44px;
   float: right;
 }
 
@@ -865,6 +866,10 @@ h1.catalog {
   position: relative;
   width: 266px;
   min-height: 362px;
+}
+
+.product-item:hover {
+  z-index: 50;
 }
 
 .best-products-list .product-item::before {
@@ -932,7 +937,7 @@ span.kg {
 
 .product-item a.product-item-name {
   position: relative;
-  top: 11px;
+  top: 17px;
   display: inline-block;
   font-size: 16px;
   text-align: center;
@@ -978,8 +983,6 @@ li.product-item:hover .see-item {
   visibility: visible;
 }
 
-
-
 .features {
   background-image: url(../img/waffle.jpg);
   background-color: #efe4cb;
@@ -987,7 +990,7 @@ li.product-item:hover .see-item {
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .features h3,
@@ -997,7 +1000,7 @@ li.product-item:hover .see-item {
 
 .features h3 {
   margin: 0;
-  margin-bottom: 19px;
+  margin-bottom: 22px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -1073,7 +1076,7 @@ li.product-item:hover .see-item {
   width: 520px;
   height: 170px;
   border-radius: 15px;
-  padding: 26px 20px;
+  padding: 25px 20px;
 
 }
 
@@ -1110,7 +1113,7 @@ li.product-item:hover .see-item {
   width: 509px;
   height: 144px;
   border-radius: 15px;
-  padding-left: 20px;
+  padding-left: 21px;
   padding-right: 18px;
   padding-top: 32px;
   padding-bottom: 34px;
@@ -1121,7 +1124,7 @@ li.product-item:hover .see-item {
   color: #5a5a5a;
   font-weight: 400;
   line-height: 22px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
 }
 
 .main-input-field {
@@ -1210,7 +1213,7 @@ li.product-item:hover .see-item {
   padding-left: 26px;
   padding-right: 26px;
   padding-bottom: 29px;
-  padding-top: 26px;
+  padding-top: 29px;
   border-radius: 15px;
 }
 
@@ -1246,7 +1249,7 @@ li.product-item:hover .see-item {
   padding-right: 28px;
   padding-top: 11px;
   padding-bottom: 10px;
-  margin-top: 23px;
+  margin-top: 24px;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1272,7 +1275,7 @@ li.product-item:hover .see-item {
 .paginator-btn {
   display: inline-block;
   width: 29px;
-  height: 21px;
+  height: 23px;
   padding-top: 6px;
   text-decoration: none;
   text-align: center;
@@ -1309,13 +1312,17 @@ a.disabled {
 
 a.main-btn,
 button.main-btn {
-  padding-top: 11px;
+  padding-top: 10px;
   padding-bottom: 11px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
   background-color: #f26843;
   background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   border-radius: 50px;
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+a.main-btn.slide-button {
+  padding-top: 10px;
 }
 
 .main-btn:hover {
@@ -1345,9 +1352,10 @@ button.main-btn {
 
 a.social-button {
   display: inline-block;
-  width: 32px;
-  height: 32px;
+  width: 36px;
+  height: 36px;
   border: 2px solid #c2cec7;
+  box-sizing: border-box;
   border-radius: 50%;
 }
 
@@ -1388,8 +1396,10 @@ a.vkontakte:hover {
   background-image: url(../img/vk-white.svg);
 }
 
- .social li  {
+ .social li {
     margin-right: 14px;
+    width: 36px;
+    height: 36px;
   }
 
 .social li:last-of-type {
@@ -1408,8 +1418,12 @@ a.vkontakte:hover {
   justify-content: space-between;
 }
 
+.footer-info p {
+  margin-top: 13px;
+}
+
 .footer-info p:last-of-type {
-  margin-left: 28px;
+  margin-left: 27px;
 }
 
 .left-footer-info a.info,
@@ -1465,7 +1479,7 @@ a.vkontakte:hover {
 .footer-copyright a.academy-logo {
   display: inline-block;
   width: 110px;
-  height: 40px;
+  height: 36px;
   background-image: url(../img/logo-htmlacademy-small.png);
   background-repeat: no-repeat;
   background-position: left;
