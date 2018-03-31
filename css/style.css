@@ -660,12 +660,7 @@ h1.catalog {
 }
 
 .fats label:nth-of-type(2)::before {
-  background-image: url(../img/radio-on.svg);
   left: 84px;
-}
-
-.fats label:nth-of-type(2):hover::before {
-  background-image: url(../img/radio-on-hover.svg);
 }
 
 .fats label:nth-of-type(3)::before {
@@ -674,6 +669,20 @@ h1.catalog {
 
 .fats label:nth-of-type(4)::before {
   left: 290px;
+}
+
+#zero:checked ~ label[for="zero"]::before,
+#under-ten:checked ~ label[for="under-ten"]::before,
+#under-thirty:checked ~ label[for="under-thirty"]::before,
+#thirty-more:checked ~ label[for="thirty-more"]::before {
+  background-image: url(../img/radio-on.svg);
+}
+
+#zero:checked ~ label[for="zero"]:hover::before,
+#under-ten:checked ~ label[for="under-ten"]:hover::before,
+#under-thirty:checked ~ label[for="under-thirty"]:hover::before,
+#thirty-more:checked ~ label[for="thirty-more"]:hover::before {
+  background-image: url(../img/radio-on-hover.svg);
 }
 
 .toppings-select {
@@ -723,21 +732,12 @@ h1.catalog {
 }
 
 .toppings label:nth-of-type(1)::before {
-  background-image: url(../img/checkbox-on.svg);
-  left: 13px;
+    left: 13px;
 }
 
-.toppings label:nth-of-type(1):hover::before {
-  background-image: url(../img/checkbox-on-hover.svg);
-}
 
 .toppings label:nth-of-type(2)::before {
-  background-image: url(../img/checkbox-on.svg);
-  left: 162px;
-}
-
-.toppings label:nth-of-type(2):hover::before {
-  background-image: url(../img/checkbox-on-hover.svg);
+    left: 162px;
 }
 
 .toppings label:nth-of-type(3)::before {
@@ -751,6 +751,23 @@ h1.catalog {
 .toppings label:nth-of-type(5)::before {
   left: 591px;
 }
+
+#choco:checked ~ label[for="choco"]::before,
+#sugars:checked ~ label[for="sugars"]::before,
+#fruits:checked ~ label[for="fruits"]::before,
+#syrop:checked ~ label[for="syrop"]::before,
+#jam:checked ~ label[for="jam"]::before {
+  background-image: url(../img/checkbox-on.svg);
+}
+
+#choco:checked ~ label[for="choco"]:hover::before,
+#sugars:checked ~ label[for="sugars"]:hover::before,
+#fruits:checked ~ label[for="fruits"]:hover::before,
+#syrop:checked ~ label[for="syrop"]:hover::before,
+#jam:checked ~ label[for="jam"]:hover::before {
+  background-image: url(../img/checkbox-on-hover.svg);
+}
+
 
 .submit-sorting {
   padding-top: 9px;
@@ -838,7 +855,6 @@ h1.catalog {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
 }
 
 .product-list {
@@ -850,8 +866,6 @@ h1.catalog {
   width: 266px;
   min-height: 362px;
 }
-
-
 
 .best-products-list .product-item::before {
   position: absolute;
@@ -873,25 +887,23 @@ h1.catalog {
   margin-bottom: 27px;
 }
 
-.product-item-name {
-  margin-top: 2px;
-  line-height: 22px;
-  font-weight: 500;
-}
+
 
 .product-item img {
-  position: absolute;
-  left: 10px;
-  top: 4px;
+  position: relative; /* было абсолют*/
+  left: 14px;
+  top: 8px;
   z-index: 0;
   border-radius: 51%;
+  z-index: 2;  /* добавила*/
 }
 
 p.price {
   position: absolute;
-  top: 215px;
+  top: 217px;
   left: 12px;
   margin: 0;
+  z-index: 3;
 }
 
 .price span:last-of-type::before {
@@ -920,27 +932,34 @@ span.kg {
 
 .product-item a.product-item-name {
   position: relative;
-  top: 283px;
+  top: 11px;
   display: inline-block;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
+  margin-top: 2px;
+  padding-left: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  width: 266px;
 }
 
 .item {
   position: absolute;
-  left: -11px;
-  top: -6px;
+  left: -14px;
+  top: -9px;
   width: 294px;
   min-height: 403px;
   border-radius: 5px;
+  z-index: 1; /*добавила*/
+    /* background-color: rgba(255,255,255,0.3); */
 }
 
 
 a.see-item {
   position: absolute;
-  left: 44px;
-  top: 337px;
+  left: 47px;
+  top: 339px;
   padding: 16px 17px;
   font-size: 18px;
   line-height: 24px;
@@ -948,15 +967,18 @@ a.see-item {
   margin: 0 auto;
   visibility: hidden;
   text-decoration: none;
+  z-index: 2;
 }
 
-div.item:hover {
+li.product-item:hover div.item {
   background-color: rgba(255,255,255,0.3);
 }
 
-div.item:hover .see-item {
+li.product-item:hover .see-item {
   visibility: visible;
 }
+
+
 
 .features {
   background-image: url(../img/waffle.jpg);
@@ -1238,8 +1260,8 @@ div.item:hover .see-item {
 
 .catalog-paginator {
   position: relative;
-  bottom: 0px;
-  right: 0px;
+  bottom: -2px;
+  right: 1px;
   margin: 0;
   margin-right: -8px;
   font-weight: 500;
@@ -1397,7 +1419,7 @@ a.vkontakte:hover {
   line-height: 18px;
   font-weight: 400;
   text-decoration: none;
-  border-bottom: 0.5px solid #9db1a5;
+  /* border-bottom: 0.5px solid #9db1a5; */
 }
 
 .footer-info a:hover,
@@ -1447,11 +1469,6 @@ a.vkontakte:hover {
   background-image: url(../img/logo-htmlacademy-small.png);
   background-repeat: no-repeat;
   background-position: left;
-}
-
-a.academy {
-  text-decoration: none;
-  border-bottom: 0.5px solid #9db1a5;
 }
 
  a.academy:hover,
