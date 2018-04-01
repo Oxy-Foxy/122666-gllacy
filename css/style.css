@@ -372,31 +372,31 @@ a.items-in-cart:focus ~ div.cart-items {
   background-color: #FFFFFF;
 }
 
-#product-1:checked ~ .index-wrapper {
+.product-1:checked ~ .index-wrapper {
   background-color: #849d8f;
   background-image: url("../img/slaider-image-1.png");
 }
 
-#product-2:checked ~ .index-wrapper {
+.product-2:checked ~ .index-wrapper {
   background-color: #8996a6;
   background-image: url("../img/slaider-image-2.png");
 }
 
 
-#product-3:checked ~ .index-wrapper {
+.product-3:checked ~ .index-wrapper {
   background-color: #9d8b84;
   background-image: url("../img/slaider-image-3.png");
 }
 
-#product-1:checked ~ .index-wrapper #slide1,
-#product-2:checked ~ .index-wrapper #slide2,
-#product-3:checked ~ .index-wrapper #slide3 {
+.product-1:checked ~ .index-wrapper .slide1,
+.product-2:checked ~ .index-wrapper .slide2,
+.product-3:checked ~ .index-wrapper .slide3 {
   display: block;
 }
 
-#product-1:checked ~ .index-wrapper label[for="product-1"],
-#product-2:checked ~ .index-wrapper label[for="product-2"],
-#product-3:checked ~ .index-wrapper label[for="product-3"] {
+.product-1:checked ~ .index-wrapper label[for="product-1"],
+.product-2:checked ~ .index-wrapper label[for="product-2"],
+.product-3:checked ~ .index-wrapper label[for="product-3"] {
   background-color: #ffffff;
 }
 
@@ -686,17 +686,17 @@ h1.catalog {
   left: 289px;
 }
 
-#zero:checked ~ label[for="zero"]::before,
-#under-ten:checked ~ label[for="under-ten"]::before,
-#under-thirty:checked ~ label[for="under-thirty"]::before,
-#thirty-more:checked ~ label[for="thirty-more"]::before {
+.zero:checked ~ label[for="zero"]::before,
+.under-ten:checked ~ label[for="under-ten"]::before,
+.under-thirty:checked ~ label[for="under-thirty"]::before,
+.thirty-more:checked ~ label[for="thirty-more"]::before {
   background-image: url(../img/radio-on.svg);
 }
 
-#zero:checked ~ label[for="zero"]:hover::before,
-#under-ten:checked ~ label[for="under-ten"]:hover::before,
-#under-thirty:checked ~ label[for="under-thirty"]:hover::before,
-#thirty-more:checked ~ label[for="thirty-more"]:hover::before {
+.zero:checked ~ label[for="zero"]:hover::before,
+.under-ten:checked ~ label[for="under-ten"]:hover::before,
+.under-thirty:checked ~ label[for="under-thirty"]:hover::before,
+.thirty-more:checked ~ label[for="thirty-more"]:hover::before {
   background-image: url(../img/radio-on-hover.svg);
 }
 
@@ -767,19 +767,19 @@ h1.catalog {
   left: 592px;
 }
 
-#choco:checked ~ label[for="choco"]::before,
-#sugars:checked ~ label[for="sugars"]::before,
-#fruits:checked ~ label[for="fruits"]::before,
-#syrop:checked ~ label[for="syrop"]::before,
-#jam:checked ~ label[for="jam"]::before {
+.choco:checked ~ label[for="choco"]::before,
+.sugars:checked ~ label[for="sugars"]::before,
+.fruits:checked ~ label[for="fruits"]::before,
+.syrop:checked ~ label[for="syrop"]::before,
+.jam:checked ~ label[for="jam"]::before {
   background-image: url(../img/checkbox-on.svg);
 }
 
-#choco:checked ~ label[for="choco"]:hover::before,
-#sugars:checked ~ label[for="sugars"]:hover::before,
-#fruits:checked ~ label[for="fruits"]:hover::before,
-#syrop:checked ~ label[for="syrop"]:hover::before,
-#jam:checked ~ label[for="jam"]:hover::before {
+.choco:checked ~ label[for="choco"]:hover::before,
+.sugars:checked ~ label[for="sugars"]:hover::before,
+.fruits:checked ~ label[for="fruits"]:hover::before,
+.syrop:checked ~ label[for="syrop"]:hover::before,
+.jam:checked ~ label[for="jam"]:hover::before {
   background-image: url(../img/checkbox-on-hover.svg);
 }
 
@@ -1001,6 +1001,7 @@ a.see-item {
 
 li.product-item:hover div.item {
   background-color: rgba(255,255,255,0.3);
+  box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
 li.product-item:hover .see-item {
@@ -1631,15 +1632,15 @@ a.vkontakte:hover {
   color: transparent;
 }
 
-:focus::-moz-placeholder          {
+:focus::-moz-placeholder {
   color: transparent;
 }
 
-:focus:-moz-placeholder           {
+:focus:-moz-placeholder {
   color: transparent;
 }
 
-:focus:-ms-input-placeholder      {
+:focus:-ms-input-placeholder {
   color: transparent;
 }
 
