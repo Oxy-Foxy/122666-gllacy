@@ -1853,6 +1853,10 @@ li.login {
   z-index: 5;
 }
 
+.feedback-wrapper.js-feedback-show {
+  display: block;
+}
+
 .feedback {
   position: absolute;
   top: 338px;
