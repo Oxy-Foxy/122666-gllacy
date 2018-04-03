@@ -1129,7 +1129,6 @@ li.product-item:hover .see-item {
   height: 170px;
   border-radius: 15px;
   padding: 25px 20px;
-
 }
 
 .blog-article p {
@@ -1242,7 +1241,7 @@ li.product-item:hover .see-item {
   height: 117px;
   background-image: url(../img/pin-shadow.png);
   background-repeat: no-repeat;
-  z-index: 3;
+  z-index: 1;
 }
 
 .map::after {
@@ -1254,8 +1253,10 @@ li.product-item:hover .see-item {
   height: 140px;
   background-image: url(../img/pin.svg);
   background-repeat: no-repeat;
-  z-index: 4;
+  z-index: 2;
 }
+
+
 
 .contact-us {
   position: absolute;

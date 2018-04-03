@@ -19,15 +19,13 @@ feedbackClose.addEventListener("click", function(e) {
   form.classList.remove("modal-error");
 });
 
-
-
 form.addEventListener("submit", function(e) {
   if(!name.value || !email.value || !message.value) {
     e.preventDefault();
     form.classList.add("modal-error");
   }
   else {
-    form.classList.remove("modal-error");
+    
     localStorage.setItem("name", name.value);
     localStorage.setItem("email", email.value);
     localStorage.setItem("message", message.value);
