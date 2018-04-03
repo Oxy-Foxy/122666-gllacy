@@ -1866,6 +1866,8 @@ li.login {
   margin-top: -221px;
   background-color: #f8f7f4;
   border-radius: 5px;
+  animation: show;
+  animation-duration: 1s;
 }
 
 .feedback span {
@@ -1939,6 +1941,12 @@ li.login {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+
+@keyframes show {
+  0% { transform: scale(0.5); top: 470px; left: 72%;  }
+  100% { transform: scale(1); top: 338px; left: 50%; }
 }
 
 /*конец формы обратной связи*/
