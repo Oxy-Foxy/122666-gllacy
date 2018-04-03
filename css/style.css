@@ -1866,8 +1866,7 @@ li.login {
   margin-top: -221px;
   background-color: #f8f7f4;
   border-radius: 5px;
-  animation: show;
-  animation-duration: 1s;
+
 }
 
 .feedback span {
@@ -1944,10 +1943,29 @@ li.login {
 }
 
 
-@keyframes show {
-  0% { transform: scale(0.5); top: 470px; left: 72%;  }
-  100% { transform: scale(1); top: 338px; left: 50%; }
+
+.get-big {
+  animation: show;
+  animation-duration: 1s;
 }
+
+@keyframes show {
+  0% { transform: scale(0.1);  }
+  100% { transform: scale(1);  }
+}
+
+.modal-error {
+  animation: shake;
+  animation-duration: 1s;
+}
+
+  @keyframes shake {
+    0%, 100%  { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90%  { transform: translateX(10px); }
+    20%, 40%, 60%, 80% { transform: translateX(-10px); }
+  }
+
+
 
 /*конец формы обратной связи*/
 
